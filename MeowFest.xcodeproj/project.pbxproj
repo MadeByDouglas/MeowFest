@@ -12,6 +12,10 @@
 		C33B7CFB206411A700D19F3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C33B7CF9206411A700D19F3E /* Main.storyboard */; };
 		C33B7CFD206411A700D19F3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C33B7CFC206411A700D19F3E /* Assets.xcassets */; };
 		C33B7D00206411A700D19F3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C33B7CFE206411A700D19F3E /* LaunchScreen.storyboard */; };
+		C33B7D082064122000D19F3E /* CatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33B7D072064122000D19F3E /* CatTableViewCell.swift */; };
+		C33B7D0A2064155E00D19F3E /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33B7D092064155E00D19F3E /* Network.swift */; };
+		C33B7D0C2064156A00D19F3E /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33B7D0B2064156A00D19F3E /* DataManager.swift */; };
+		C3C0C5B420E2FA2000A5C766 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C0C5B320E2FA2000A5C766 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		C33B7CFC206411A700D19F3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C33B7CFF206411A700D19F3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C33B7D01206411A700D19F3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C33B7D072064122000D19F3E /* CatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatTableViewCell.swift; sourceTree = "<group>"; };
+		C33B7D092064155E00D19F3E /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		C33B7D0B2064156A00D19F3E /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		C3C0C5B320E2FA2000A5C766 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +64,11 @@
 			children = (
 				C33B7CF5206411A700D19F3E /* AppDelegate.swift */,
 				C33B7CF7206411A700D19F3E /* ViewController.swift */,
+				C33B7D092064155E00D19F3E /* Network.swift */,
+				C33B7D0B2064156A00D19F3E /* DataManager.swift */,
+				C3C0C5B320E2FA2000A5C766 /* Extensions.swift */,
 				C33B7CF9206411A700D19F3E /* Main.storyboard */,
+				C33B7D072064122000D19F3E /* CatTableViewCell.swift */,
 				C33B7CFC206411A700D19F3E /* Assets.xcassets */,
 				C33B7CFE206411A700D19F3E /* LaunchScreen.storyboard */,
 				C33B7D01206411A700D19F3E /* Info.plist */,
@@ -91,7 +103,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = TaleKickAppLLC;
 				TargetAttributes = {
 					C33B7CF1206411A700D19F3E = {
@@ -137,6 +149,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C33B7CF8206411A700D19F3E /* ViewController.swift in Sources */,
+				C3C0C5B420E2FA2000A5C766 /* Extensions.swift in Sources */,
+				C33B7D0C2064156A00D19F3E /* DataManager.swift in Sources */,
+				C33B7D082064122000D19F3E /* CatTableViewCell.swift in Sources */,
+				C33B7D0A2064155E00D19F3E /* Network.swift in Sources */,
 				C33B7CF6206411A700D19F3E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -177,6 +193,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -184,6 +201,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -234,6 +252,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -241,6 +260,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
