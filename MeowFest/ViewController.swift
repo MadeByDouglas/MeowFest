@@ -56,7 +56,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print(data.cats?.count)
         return data.cats?.count ?? 0
     }
 
@@ -79,13 +78,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let aCat = cats[indexPath.row]
 
         // MARK: START HERE
-
         //lets have the cats say hello
 
-//        let aName = "Hello World"
-        let aName = shuffledNames[indexPath.row]
 
-        cell.configure(cat: aCat, studentName: aName)
+
+
+        cell.configure(cat: aCat, displayText: "")
 
         return cell
 

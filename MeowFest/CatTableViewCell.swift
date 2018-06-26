@@ -26,7 +26,7 @@ class CatTableViewCell: UITableViewCell {
     let blurEffect = UIBlurEffect(style: .regular)
 
 
-    func configure(cat: Cat, studentName: String) {
+    func configure(cat: Cat, displayText: String) {
 
         blurredEffectView = UIVisualEffectView(effect: blurEffect)
         blurredEffectView.frame = studentNameLabel.frame
@@ -45,7 +45,7 @@ class CatTableViewCell: UITableViewCell {
         nameLabel.text = cat.title
         descriptionLabel.text = cat.description
 
-        studentNameLabel.text = studentName
+        studentNameLabel.text = displayText
     }
 
     func getImageForCat(urlString: String) {
